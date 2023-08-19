@@ -45,7 +45,7 @@
 </head>
 
 <body class="font-work-sans">
-  <header class="bg-[#F9F6E2] py-6">
+  <header class="bg-[#F9F6E2]">
     <!-- Banner starts -->
     <div class="container mx-auto hero min-h-screen bg-[#F9F6E2]">
       <div class="hero-content flex-col lg:flex-row-reverse">
@@ -61,7 +61,161 @@
     </div>
     <!-- Banner Ends -->
   </header>
-  <main>
+  <main class="container mx-auto mt-32 mb-32 bg-[#F8F8F8]">
+    <!-- Kitchenware Heading -->
+    <h3 class="font-semibold text-4xl">Kitchenware</h3>
+    <!-- Full Container Starts-->
+    <section class="container mx-auto flex flex-col-reverse md:flex-row gap-3">
+      <!-- left/main side: Cards section -->
+      <div class="text-center">
+        <!-- Kitchenware part starts -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mb-24">
+          <!-- Kitchenware 1st card -->
+          <div class="card bg-[#FFFFFF] rounded-lg">
+            <figure class="bg-[#1111110D] flex justify-center align-middle m-4 rounded-lg py-7">
+              <img src="images/kitchen-1.png" alt="Kitchenware" />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-xl font-semibold">K. Accessories</h2>
+              <p class="text-xl font-normal"><span>49.00</span>TK</p>
+            </div>
+          </div>
+          <!-- Kitchenware 2nd card -->
+          <div class="card bg-[#FFFFFF] rounded-lg">
+            <figure class="bg-[#1111110D] flex justify-center align-middle m-4 rounded-lg py-7">
+              <img src="images/kitchen-1.png" alt="Kitchenware" />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-xl font-semibold">K. Accessories</h2>
+              <p class="text-xl font-normal"><span>49.00</span>TK</p>
+            </div>
+          </div>
+          <!-- Kitchenware 3rd card -->
+          <div class="card bg-[#FFFFFF] rounded-lg">
+            <figure class="bg-[#1111110D] flex justify-center align-middle m-4 rounded-lg py-7">
+              <img src="images/kitchen-1.png" alt="Kitchenware" />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-xl font-semibold">K. Accessories</h2>
+              <p class="text-xl font-normal"><span>49.00</span>TK</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sportswear part starts -->
+        <h3 class="font-semibold text-4xl">Sportswear</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mb-24">
+          <!-- Sportswear 1st card -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/flower-img (1).png" alt="" class="box-img" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-2xl font-bold">Sada Fool</h2>
+              <p>I love flowers. It is the scent of man's life.</p>
+
+              <p>Price: <span>10</span>$</p>
+              <div class="card-actions w-full">
+                <button onclick="addItemToCart(this)" id="add-btn" class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Sportswear 2nd card -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/flower-img (2).png" alt="" class="box-img" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-2xl font-bold">Kala Fool</h2>
+              <p>I love flowers. It is the scent of man's life.</p>
+
+              <p>Price: <span>10.50</span>$</p>
+              <div class="card-actions w-full">
+                <button onclick="addItemToCart(this)" class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Sportswear 3rd card -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/flower-img (3).png" alt="" class="box-img" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-2xl font-bold">Gada Fool</h2>
+              <p>I love flowers. It is the scent of man's life.</p>
+
+              <p>Price: <span>20</span>$</p>
+              <div class="card-actions w-full">
+                <button onclick="addItemToCart(this)" class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Furniture part starts -->
+        <h3 class="font-semibold text-4xl">Furniture</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+          <!-- Furniture 1st card -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/flower-img (1).png" alt="" class="box-img" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-2xl font-bold">Sada Fool</h2>
+              <p>I love flowers. It is the scent of man's life.</p>
+
+              <p>Price: <span>10</span>$</p>
+              <div class="card-actions w-full">
+                <button onclick="addItemToCart(this)" id="add-btn" class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Furniture 2nd card -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/flower-img (2).png" alt="" class="box-img" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-2xl font-bold">Kala Fool</h2>
+              <p>I love flowers. It is the scent of man's life.</p>
+
+              <p>Price: <span>10.50</span>$</p>
+              <div class="card-actions w-full">
+                <button onclick="addItemToCart(this)" class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Furniture 3rd card -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/flower-img (3).png" alt="" class="box-img" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-2xl font-bold">Gada Fool</h2>
+              <p>I love flowers. It is the scent of man's life.</p>
+
+              <p>Price: <span>20</span>$</p>
+              <div class="card-actions w-full">
+                <button onclick="addItemToCart(this)" class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right side: Calculation Section -->
+      <div>
+        <div id="cart-container" class="w-full px-7 min-h-[500px] border border-solid border-black text-center">
+          <h3 class="min-w-max font-semibold text-2xl underline text-center">SHOPPING CART</h3>
+
+          <div id="cart-items" class="text-xl">
+            Items selected:
+            <ul id="cart-ul">
+            </ul>
+          </div>
+          <h2 class="text-xl font-semibold">Total Price: <span id="cart-price-total">00</span>$</h2>
+        </div>
+      </div>
+    </section>
 
   </main>
   <footer>
