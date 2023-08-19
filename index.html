@@ -78,7 +78,7 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mb-24">
 
             <!-- Kitchenware 1st card -->
-            <div class="card bg-[#FFFFFF] rounded-lg">
+            <div onclick="addItemToCart(this)" class="card bg-[#FFFFFF] rounded-lg">
               <figure class="bg-[#1111110D] flex justify-center align-middle m-4 rounded-lg py-7">
                 <img src="images/kitchen-1.png" alt="Kitchenware" />
               </figure>
@@ -98,7 +98,7 @@
             </div>
 
             <!-- Kitchenware 2nd card -->
-            <div class="card bg-[#FFFFFF] rounded-lg">
+            <div onclick="addItemToCart(this)" class="card bg-[#FFFFFF] rounded-lg">
               <figure class="bg-[#1111110D] flex justify-center align-middle m-4 rounded-lg py-7">
                 <img src="images/kitchen-2.png" alt="Kitchenware" />
               </figure>
@@ -118,7 +118,7 @@
             </div>
 
             <!-- Kitchenware 3rd card -->
-            <div class="card bg-[#FFFFFF] rounded-lg">
+            <div onclick="addItemToCart(this)" class="card bg-[#FFFFFF] rounded-lg">
               <figure class="bg-[#1111110D] flex justify-center align-middle m-4 rounded-lg py-7">
                 <img src="images/kitchen-3.png" alt="Kitchenware" />
               </figure>
@@ -143,7 +143,7 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mb-24">
 
             <!-- Sportswear 1st card -->
-            <div class="card bg-[#FFFFFF] rounded-lg">
+            <div onclick="addItemToCart(this)" class="card bg-[#FFFFFF] rounded-lg">
               <figure class="bg-[#1111110D] flex justify-center align-middle m-4 rounded-lg py-7">
                 <img src="images/sports-1.png" alt="Sportswear" />
               </figure>
@@ -163,7 +163,7 @@
             </div>
 
             <!-- Sportswear 2nd card -->
-            <div class="card bg-[#FFFFFF] rounded-lg">
+            <div onclick="addItemToCart(this)" class="card bg-[#FFFFFF] rounded-lg">
               <figure class="bg-[#1111110D] flex justify-center align-middle m-4 rounded-lg py-7">
                 <img src="images/sports-2.png" alt="Sportswear" />
               </figure>
@@ -183,7 +183,7 @@
             </div>
 
             <!-- Sportswear 3rd card -->
-            <div class="card bg-[#FFFFFF] rounded-lg">
+            <div onclick="addItemToCart(this)" class="card bg-[#FFFFFF] rounded-lg">
               <figure class="bg-[#1111110D] flex justify-center align-middle m-4 rounded-lg py-7">
                 <img src="images/sports-3.png" alt="Sportswear" />
               </figure>
@@ -208,7 +208,7 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
 
             <!-- Furniture 1st card -->
-            <div class="card bg-[#FFFFFF] rounded-lg">
+            <div onclick="addItemToCart(this)" class="card bg-[#FFFFFF] rounded-lg">
               <figure class="bg-[#1111110D] flex justify-center align-middle m-4 rounded-lg py-7">
                 <img src="images/furniture-1.png" alt="Furniture" />
               </figure>
@@ -228,7 +228,7 @@
             </div>
 
             <!-- Furniture 2nd card -->
-            <div class="card bg-[#FFFFFF] rounded-lg">
+            <div onclick="addItemToCart(this)" class="card bg-[#FFFFFF] rounded-lg">
               <figure class="bg-[#1111110D] flex justify-center align-middle m-4 rounded-lg py-7">
                 <img src="images/furniture-2.png" alt="Furniture" />
               </figure>
@@ -248,7 +248,7 @@
             </div>
 
             <!-- Furniture 3rd card -->
-            <div class="card bg-[#FFFFFF] rounded-lg">
+            <div onclick="addItemToCart(this)" class="card bg-[#FFFFFF] rounded-lg">
               <figure class="bg-[#1111110D] flex justify-center align-middle m-4 rounded-lg py-7">
                 <img src="images/furniture-3.png" alt="Furniture" />
               </figure>
@@ -274,13 +274,14 @@
           <div id="cart-container" class="w-full p-6 bg-[#FFFFFF] rounded-lg mb-7">
             <h5 class="font-semibold text-2xl">Have coupon?</h5>
 
-            <input type="text" name="" id="" class="py-3 px-5 border border-[#11111126] border-r-0 rounded-l-lg ">
-            <button class="-ml-2 bg-primary-col text-white text-lg font-semibold py-3 px-5 rounded-r-lg">Apply
+            <input type="text" name="" id="" class="py-3 md:px-5 border border-[#11111126] border-r-0 rounded-l-lg ">
+            <button id="apply-btn" class="-ml-2 bg-primary-col text-white text-lg font-semibold py-3 px-5 rounded-r-lg"
+              disabled>Apply
             </button>
 
           </div>
-          <div id="cart-container" class="w-full p-6 bg-[#FFFFFF] rounded-lg">
-            <div id="cart-items" class="text-xl font-semibold mt-2 mb-2">
+          <div class="w-full p-6 bg-[#FFFFFF] rounded-lg">
+            <div id="cart-items-container" class="text-xl font-semibold mt-2 mb-5">
 
             </div>
             <h5 class="mt-2 mb-2 font-normal text-xl"><span class="font-semibold"> Total price: </span> <span
@@ -294,8 +295,8 @@
                 id="final-total">00</span> TK
             </h5>
           </div>
-          <div class="text-center -mt-6">
-            <button class="w-3/4 bg-primary-col text-white text-lg font-semibold py-3 px-5 rounded-xl">Make
+          <div id="purchase-btn" class="text-center -mt-6">
+            <button class="w-3/4 bg-primary-col text-white text-lg font-semibold py-3 px-5 rounded-xl" disabled>Make
               Purchase</button>
           </div>
 
@@ -305,6 +306,8 @@
   </main>
   <footer></footer>
   <script></script>
+  <script src="scripts/functions.js"></script>
+  <script src="scripts/index.js"></script>
 </body>
 
 </html>
