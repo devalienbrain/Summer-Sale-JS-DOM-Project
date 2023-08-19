@@ -23,8 +23,13 @@ function renderClickedItems() {
   cartItemsContainer.appendChild(p);
 }
 
+let finalTotal = 0;
+
 function renderTotalPrice() {
   document.getElementById('total-price').innerText = parseFloat(totalPrice).toFixed(2);
+
+  finalTotal = totalPrice;
+  document.getElementById('final-total').innerText = parseFloat(finalTotal).toFixed(2);
 }
 
 let discount = 0;
@@ -32,7 +37,7 @@ function calculateDiscountValue() {
   discount = (totalPrice * 20) / 100;
   document.getElementById('discount').innerText = parseFloat(discount).toFixed(2);
 }
-let finalTotal = 0;
+
 function renderFinalTotal() {
   finalTotal = totalPrice - discount;
   document.getElementById('final-total').innerText = parseFloat(finalTotal).toFixed(2);

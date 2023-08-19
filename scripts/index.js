@@ -17,3 +17,7 @@ document.getElementById('apply-btn').addEventListener('click', function () {
   }
 });
 
+document.getElementById('purchase-btn').addEventListener('click', function () {
+  console.log('modal');
+});
+
