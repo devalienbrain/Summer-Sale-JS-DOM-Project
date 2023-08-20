@@ -275,32 +275,32 @@
             <h5 class="font-semibold text-2xl">Have coupon?</h5>
 
             <input type="text" name="" id="coupon" placeholder="Coupon code"
-              class="py-3 md:px-5 border border-[#11111126] border-r-0 rounded-l-lg ">
+              class="py-3 md:px-5 border border-[#11111126] border-r-0 rounded-l-lg" disabled>
+
             <button id="apply-btn"
-              class="-ml-2 bg-primary-col text-white text-lg font-semibold py-3 px-5 rounded-r-lg  hover:bg-white hover:text-primary-col hover:border hover:border-primary-col"
+              class="-ml-2 bg-primary-col opacity-25 text-white text-lg font-semibold py-3 px-5 rounded-r-lg"
               disabled>Apply
             </button>
-
           </div>
           <div class="w-full p-6 bg-[#FFFFFF] rounded-lg">
             <div id="cart-items-container" class="text-xl font-semibold mt-2 mb-5">
 
             </div>
             <h5 class="mt-5 mb-2 pt-3 font-normal text-xl border-t"><span class="font-semibold"> Total price: </span>
-              <span id="total-price">00</span> TK
+              <span id="total-price">0.00</span> TK
             </h5>
 
             <h5 class="mt-2 mb-2 font-normal text-xl"><span class="font-semibold">Discount: </span> <span
-                id="discount">00</span> TK
+                id="discount">0.00</span> TK
             </h5>
 
             <h5 class="mt-2 mb-5 pb-3 font-normal text-xl border-b"><span class="font-semibold">Total: </span> <span
-                id="final-total">00</span> TK
+                id="final-total">0.00</span> TK
             </h5>
           </div>
           <div class="text-center -mt-6">
             <button id="purchase-btn" onclick="my_modal_1.showModal()"
-              class="w-3/4 bg-primary-col text-white text-lg font-semibold py-3 px-5 rounded-xl hover:bg-white hover:text-primary-col hover:border hover:border-primary-col"
+              class="w-3/4 bg-primary-col opacity-25 text-white text-lg font-semibold py-3 px-5 rounded-xl"
               disabled>Make
               Purchase</button>
 

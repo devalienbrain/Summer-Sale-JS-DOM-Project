@@ -7,11 +7,17 @@ function accessItemProperty(itemClicked) {
   totalPrice += itemPrice;
 
   if (totalPrice > 0) {
-    document.getElementById('purchase-btn').removeAttribute('disabled');
+    const purchasebtn = document.getElementById('purchase-btn');
+    purchasebtn.removeAttribute('disabled');
+    purchasebtn.classList.remove('opacity-25');
   }
 
   if (totalPrice >= 200) {
-    document.getElementById('apply-btn').removeAttribute('disabled');
+    const applyBtn = document.getElementById('apply-btn');
+    applyBtn.removeAttribute('disabled');
+    applyBtn.classList.remove('opacity-25');
+
+    document.getElementById('coupon').removeAttribute('disabled');
   }
 }
 
